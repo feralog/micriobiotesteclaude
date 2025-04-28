@@ -90,7 +90,97 @@
     const API_URL = 'https://script.google.com/macros/s/SEU_ID/exec';
 
     // QUIZ DATA
-    const questions = [ /* … sua lista de perguntas … */ ];
+    const questions = [{
+                question: "Qual família viral inclui o vírus da febre amarela?",
+                options: ["Togaviridae", "Flaviviridae", "Bunyaviridae", "Reoviridae"],
+                correctIndex: 1,
+                explanation: "Flaviviridae é a família que inclui o vírus da febre amarela."
+            },
+            {
+                question: "O principal vetor urbano da dengue no Brasil é:",
+                options: ["Culex spp.", "Haemagogus spp.", "Aedes aegypti", "Sabethes spp."],
+                correctIndex: 2,
+                explanation: "Aedes aegypti é o principal vetor urbano da dengue no Brasil."
+            },
+            {
+                question: "A fase crítica da dengue é caracterizada principalmente por:",
+                options: ["Febre alta persistente", "Hemorragia grave e extravasamento plasmático", "Hepatite fulminante", "Conjuntivite"],
+                correctIndex: 1,
+                explanation: "A fase crítica envolve hemorragias e extravasamento de plasma."
+            },
+            {
+                question: "Em relação à febre amarela, o sinal de Faget consiste em:",
+                options: ["Bradicardia com febre alta", "Taquicardia e febre baixa", "Bradicardia e hipotermia", "Hipotensão isolada"],
+                correctIndex: 0,
+                explanation: "Sinal de Faget é a associação de febre alta com bradicardia."
+            },
+            {
+                question: "No ciclo da febre amarela, os reservatórios silvestres incluem:",
+                options: ["Cães e gatos", "Humanos", "Macacos", "Mosquitos"],
+                correctIndex: 2,
+                explanation: "Macacos são os principais reservatórios silvestres da febre amarela."
+            },
+            {
+                question: "A transmissão alternativa do vírus Zika inclui:",
+                options: ["Transmissão por alimentos", "Transmissão sexual", "Transmissão vetorial exclusivamente", "Transmissão por objetos contaminados"],
+                correctIndex: 1,
+                explanation: "O vírus Zika pode ser transmitido sexualmente além do vetor."
+            },
+            {
+                question: "A febre amarela pode ser prevenida por:",
+                options: ["Antibióticos", "Soroterapia", "Vacinação", "Antivirais específicos"],
+                correctIndex: 2,
+                explanation: "A vacinação é a forma eficaz de prevenção contra febre amarela."
+            },
+            {
+                question: "Um fator de risco para expansão das arboviroses é:",
+                options: ["Urbanização planejada", "Baixa mobilidade populacional", "Transporte intenso de cargas", "Saneamento básico adequado"],
+                correctIndex: 2,
+                explanation: "O transporte intenso de cargas facilita a expansão de vetores."
+            },
+            {
+                question: "A principal fase de viremia da chikungunya dura aproximadamente:",
+                options: ["3 dias", "7 dias", "10 dias", "14 dias"],
+                correctIndex: 2,
+                explanation: "A fase de viremia na chikungunya dura cerca de 10 dias."
+            },
+            {
+                question: "A síndrome de Guillain-Barré está associada principalmente a infecção por:",
+                options: ["Dengue", "Febre Amarela", "Zika", "Chikungunya"],
+                correctIndex: 2,
+                explanation: "O vírus Zika é fortemente associado à síndrome de Guillain-Barré."
+            },
+            {
+                question: "No diagnóstico de dengue, a proteína detectada por testes é:",
+                options: ["NS1", "GP120", "M1", "HA"],
+                correctIndex: 0,
+                explanation: "A proteína NS1 é detectada em testes rápidos de dengue."
+            },
+            {
+                question: "A infecção sequencial por sorotipos diferentes da dengue pode levar a:",
+                options: ["Hepatite autoimune", "Dengue grave (SCD/FHD)", "Síndrome nefrótica", "Paralisia facial"],
+                correctIndex: 1,
+                explanation: "A infecção por sorotipos diferentes aumenta o risco de dengue grave."
+            },
+            {
+                question: "Um sintoma típico da fase crônica da chikungunya é:",
+                options: ["Febre alta", "Alopecia", "Náusea intensa", "Anemia severa"],
+                correctIndex: 1,
+                explanation: "Alopecia pode ocorrer na fase crônica da chikungunya."
+            },
+            {
+                question: "Qual fator imunológico é associado à teoria dos anticorpos potencializadores da dengue?",
+                options: ["Resposta mediada por células T", "Formação de autoanticorpos", "Antibody Dependent Enhancement (ADE)", "Deposição de complexos imunes"],
+                correctIndex: 2,
+                explanation: "O fenômeno ADE explica a gravidade em infecções secundárias de dengue."
+            },
+            {
+                question: "No tratamento das arboviroses, deve-se evitar:",
+                options: ["Paracetamol", "Hidratação oral", "Salicilatos", "Reposição de eletrólitos"],
+                correctIndex: 2,
+                explanation: "Salicilatos devem ser evitados pelo risco de sangramento nas arboviroses."
+            }
+        ];
 
     // VAR globais
     let currentQuestionIndex=0, score=0, userAnswers=[], seconds=0, timerInterval, questionAnswered=false;
